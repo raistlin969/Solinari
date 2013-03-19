@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{98a5a646-506f-4949-ae65-9797d6e756fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solinari">
+      <UniqueIdentifier>{17f53b9c-f753-42c2-9258-d7b87f8bdbdb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Application\SolinariStd.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\SolinariApp.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\SolinariStd.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Solinari.cpp">
+      <Filter>Solinari</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
