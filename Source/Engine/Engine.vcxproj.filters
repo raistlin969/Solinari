@@ -7,26 +7,50 @@
     <Filter Include="Core">
       <UniqueIdentifier>{1d021b5d-3f47-4104-85b4-15a08d8cd7c8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Debugging">
+      <UniqueIdentifier>{4c89e9bf-b0b4-4d89-b90e-69d92f778923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TinyXML">
+      <UniqueIdentifier>{c7cbae1b-f7e1-4c5f-b7f2-97860643999f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Multicore">
+      <UniqueIdentifier>{296cd840-1224-4e9c-8ba5-dcca9f152414}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\EngineEntry.cpp">
       <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="Core\EngineStd.cpp" />
     <ClCompile Include="Core\GLAppWindow.cpp">
       <Filter>Core</Filter>
     </ClCompile>
     <ClCompile Include="Core\CoreApp.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="TinyXML\tinyxml2.cpp">
+      <Filter>TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineStd.cpp" />
+    <ClCompile Include="Debugging\Logger.cpp">
+      <Filter>Debugging</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core\EngineStd.h" />
     <ClInclude Include="Core\GLAppWindow.h">
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="Core\CoreApp.h">
       <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Debugging\Logger.h">
+      <Filter>Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="TinyXML\tinyxml2.h">
+      <Filter>TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineStd.h" />
+    <ClInclude Include="Multicore\CriticalSection.h">
+      <Filter>Multicore</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -24,10 +24,27 @@
 #include <queue>
 #include <map>
 
+#include "TinyXML/tinyxml2.h"
+
 using std::tr1::shared_ptr;
 using std::tr1::weak_ptr;
 using std::tr1::static_pointer_cast;
 using std::tr1::dynamic_pointer_cast;
+
+class SOL_noncopyable
+{
+private:
+  SOL_noncopyable(const SOL_noncopyable& x);
+  SOL_noncopyable& operator=(const SOL_noncopyable& x);
+public:
+  SOL_noncopyable() {};
+};
+
+#if defined(_DEBUG)
+#define SOL_NEW new(_NORMAL_BLOCK, __FILE__, __LINE__)
+#else
+#define SOL_NEW new
+#endif
 
 
 extern INT WINAPI EngineEntry(HINSTANCE hInstance,
