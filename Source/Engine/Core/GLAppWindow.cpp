@@ -2,8 +2,8 @@
 #include "GLAppWindow.h"
 #include "CoreApp.h"
 
-#include <gl/glew.h>
-#include <gl/wglew.h>
+#include "3rdParty/glew-1.9.0/include/GL/glew.h"
+#include "3rdParty/glew-1.9.0/include/GL/wglew.h"
 
 GLAppWindow::GLAppWindow()
 {
