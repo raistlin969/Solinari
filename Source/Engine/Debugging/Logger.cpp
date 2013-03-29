@@ -102,7 +102,7 @@ void LogMgr::Init(const char* logging_config_filename)
   if(logging_config_filename)
   {
     tinyxml2::XMLDocument log_file;
-    if(log_file.LoadFile(logging_config_filename))
+    if(log_file.LoadFile(logging_config_filename) == 0)
     {
       tinyxml2::XMLNode*  root = log_file.FirstChild();
       if(!root)

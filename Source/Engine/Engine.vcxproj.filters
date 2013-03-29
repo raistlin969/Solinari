@@ -16,6 +16,12 @@
     <Filter Include="Multicore">
       <UniqueIdentifier>{296cd840-1224-4e9c-8ba5-dcca9f152414}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Actors">
+      <UniqueIdentifier>{caf53da6-ee79-42f4-aa20-4ff03e2e9277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{03386483-2c61-4dad-9b52-37752e8d3ec0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\EngineEntry.cpp">
@@ -34,6 +40,9 @@
     <ClCompile Include="Debugging\Logger.cpp">
       <Filter>Debugging</Filter>
     </ClCompile>
+    <ClCompile Include="Actors\Actor.cpp">
+      <Filter>Actors</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\GLAppWindow.h">
@@ -51,6 +60,18 @@
     <ClInclude Include="EngineStd.h" />
     <ClInclude Include="Multicore\CriticalSection.h">
       <Filter>Multicore</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\Actor.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Interfaces.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\ActorComponent.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\String.h">
+      <Filter>Utility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

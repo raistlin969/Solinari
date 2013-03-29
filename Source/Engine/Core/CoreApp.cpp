@@ -1,6 +1,7 @@
 #include "EngineStd.h"
 #include "CoreApp.h"
 #include "GLAppWindow.h"
+#include "../Debugging/Logger.h"
 
 CoreApp* the_app_pointer = 0;
 
@@ -19,6 +20,7 @@ bool CoreApp::InitInstance(HINSTANCE hinstance, LPWSTR cmd_line, HWND hwnd, int 
 
   //create GLAppWindow
   _app_window = new GLAppWindow();
+  SOL_INFO("GL App Window created");
   _app_window->Create(L"EngineTest", 800, 600);
   _running = true;
   return true;

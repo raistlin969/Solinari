@@ -46,7 +46,7 @@ public:
 #define SOL_NEW new
 #endif
 
-
+#include "Core/Interfaces.h"
 extern INT WINAPI EngineEntry(HINSTANCE hInstance,
                               HINSTANCE hPrevInstance,
                               LPWSTR lpCmdLine,

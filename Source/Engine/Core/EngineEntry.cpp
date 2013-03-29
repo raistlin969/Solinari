@@ -1,5 +1,6 @@
 #include "EngineStd.h"
 #include "CoreApp.h"
+#include "../Debugging/Logger.h"
 
 INT WINAPI EngineEntry(HINSTANCE hInstance,
                               HINSTANCE hPrevInstance,
@@ -20,6 +21,7 @@ INT WINAPI EngineEntry(HINSTANCE hInstance,
   _CrtSetDbgFlag(temp_debug_flag);
 
   //init Logging
+  Logger::Init("logging.xml");
 
   //perfrom app init
   if(!the_app_pointer->InitInstance(hInstance, lpCmdLine, 0))
@@ -41,6 +43,6 @@ INT WINAPI EngineEntry(HINSTANCE hInstance,
   //shutdown
 
   //destroy logger
-
+  Logger::Destroy();
   return 0; //return app exit code
 }

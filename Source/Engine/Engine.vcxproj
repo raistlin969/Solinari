@@ -170,6 +170,7 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Actors\Actor.cpp" />
     <ClCompile Include="Core\CoreApp.cpp" />
     <ClCompile Include="Core\EngineEntry.cpp" />
     <ClCompile Include="Core\GLAppWindow.cpp" />
@@ -183,12 +184,16 @@
     <ClCompile Include="TinyXML\tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Actors\Actor.h" />
+    <ClInclude Include="Actors\ActorComponent.h" />
     <ClInclude Include="Core\CoreApp.h" />
     <ClInclude Include="Core\GLAppWindow.h" />
+    <ClInclude Include="Core\Interfaces.h" />
     <ClInclude Include="Debugging\Logger.h" />
     <ClInclude Include="EngineStd.h" />
     <ClInclude Include="Multicore\CriticalSection.h" />
     <ClInclude Include="TinyXML\tinyxml2.h" />
+    <ClInclude Include="Utility\String.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
